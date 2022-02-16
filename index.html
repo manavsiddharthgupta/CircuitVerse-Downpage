@@ -1,67 +1,72 @@
 <!DOCTYPE html>
-<title>Site Maintenance</title>
-<style>
-	body {
-		text-align: center;
-	}
-	h1 {
-		font-size: 50px;
-		color: #42b983;
-	}
-	body {
-		font: 20px Helvetica, sans-serif;
-		color: #333;
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="mystyle.css">
+	<title>Site Maintenance</title>
+</head>
+<body>
+	<article>
+		<div class="main-content">
+			<h1 class="head">Coming Soon</h1>
+			<div class="description">
+				<p>Our website currently undergoing scheduled maintenance.</p>
+				<p>We Should be back shortly. Thank you for your patience.</p>
+			</div>
+			<div class="notify-us">
+				<input class="notify-input" type="email" placeholder="Enter your email" name="notifyme">
+				<div class="notify-btn">
+					<input class="btn" type="button" value="Notify Us">
+				</div>
+			</div>
+			<div class="count-timer">
+				<p id="timer"></p>
+			</div>
+		</div>
+	</article>
+	<footer>
+		<div class="footer-content">
+			<h3>Follow us for more update</h3>
+			<div class="connect-with-us">
+				<a class="social-network twitter" href=""><img src="https://seeklogo.com/images/T/twitter-2012-negative-logo-5C6C1F1521-seeklogo.com.png" alt="twitter" width="30px" height="30px"></a>
+				<a class="social-network github" href=""><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github" width="30px" height="30px"></a>
+				<a class="social-network mail" href=""><img src="https://cdn.worldvectorlogo.com/logos/gmail-icon-3.svg" alt="mail" width="30px" height="30px"></a>
+				<a class="social-network instagram" href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" alt="instagram" width="30px" height="30px"></a>
+			</div>
+	    </div>
+	</footer>
+
+
+
+
+	<script>
 		
-	}
-
-	article {
-		display: block;
-		text-align: center;
-		width: 650px;
-		margin: 0 auto;
-	}
-	a {
-		color: #42b983;
-		text-decoration: none;
-	}
-	a:hover {
-		color: #333;
-		text-decoration: none;
-	}
-	.image {
-		border: 1px solid #ddd;
-		border-radius: 10px;
-		padding: 5px;
-		width: 70%;
-		height: 50%;
-	}
-
-	.image:hover:hover {
-		box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-	}
-	.logo {
-		width: 10%;
-		height: 10%;
-	}
-</style>
-
-<article>
-	<div class="heading">
-		<h1>We&rsquo;ll be back soon!</h1>
-	</div>
-	<img
-		src="https://i.imgur.com/iXhiJcw.png"
-		title="source: imgur.com"
-		class="image"
-	/>
-
-	<div>
-		<p>
-			Sorry for the inconvenience but we&rsquo;re performing some maintenance at
-			the moment. If you need to you can always
-			<a href="mailto:support@circuitverse.org">contact us</a>, otherwise
-			we&rsquo;ll be back online shortly!
-		</p>
-		<p>&mdash; Team Circuitverse</p>
-	</div>
-</article>
+		var countDownDate = new Date("June 28, 2022 15:37:25").getTime();
+		
+		var x = setInterval(function() {  // Update the count down every 1 second
+		
+		  var now = new Date().getTime(); // Get today's date and time
+			
+		  var distance = countDownDate - now;  // Find the distance between now and the count down date
+			
+		  // Time calculations for days, hours, minutes and seconds
+		  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+			
+		  // Output the result in an element with id="demo"
+		  document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+		  + minutes + "m " + seconds + "s ";
+			
+		  // If the count down is over, write some text 
+		  if (distance < 0) {
+			clearInterval(x);
+			document.getElementById("demo").innerHTML = "EXPIRED";
+		  }
+		}, 1000);
+		</script>
+</body>
+</html>

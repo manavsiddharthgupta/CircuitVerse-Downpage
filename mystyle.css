@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+body{
+    background: linear-gradient(#12c2e9,#c471ed,#ee7e86);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+article{
+    height: 96vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover, contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content{
+    background-color: rgba(255, 255, 255, 0.322);
+    box-shadow: 15px 15px 15px 15px #0000001c;
+    border-radius: 20px;
+    text-align: center;
+    padding: 2em;
+    height: fit-content;
+}
+.head{
+    color: #42b983;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+.description{
+    color: black;
+    font-size: 1rem;
+    padding: 1em;
+    line-height: 1.2em;
+    letter-spacing: 0.8px;
+}
+.notify-us{
+    position: relative;
+}
+.notify-input{
+    padding: 0.6em 1em;
+    font-size: 0.9em;
+    width: 90%;
+    border-radius: 25px;
+    border: rgba(255, 255, 255, 0.637);
+}
+.notify-btn{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    
+}
+.notify-btn .btn{
+    font-size: 0.9em;
+    border-radius: 25px;
+    padding: 0.5em 1.1em;
+    margin-right: 0.1em;
+    border: white;
+    background-color: #42b983;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.count-timer p{
+    font-size: 3rem;
+    font-weight: 400;
+}
+.count-timer{
+    display: inline-block;
+    background-color: white;
+    margin-top: 2em;
+    padding-top: 0.4em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 25px;
+
+}
+.footer-content{
+    width: 100%;
+}
+.footer-content h3{
+    text-align: center;
+    font-size: 1.1em;
+    color: black;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.connect-with-us{
+    text-align: center;
+    padding: 0.2em 0em;
+}
+.social-network{
+    display: inline-block;
+    margin: 0.5em;
+}
+
